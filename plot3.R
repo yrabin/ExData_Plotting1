@@ -14,9 +14,9 @@ par(mfrow = c(1,1), bg = 'transparent')
 
 # PLOT 3
 with(hhpower2days, {
-  plot(datetime, Sub_metering_1, col='black', xlab='', ylab='Energy sub metering', type='l')
-  lines(datetime, Sub_metering_2, col='red')
-  lines(datetime, Sub_metering_3, col='blue')
+  plot(datetime, as.numeric(paste(Sub_metering_1)), col='black', xlab='', ylab='Energy sub metering', type='l')
+  lines(datetime, as.numeric(paste(Sub_metering_2)), col='red')
+  lines(datetime, as.numeric(paste(Sub_metering_3)), col='blue')
 })
 legend('topright',
   legend = c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3'),

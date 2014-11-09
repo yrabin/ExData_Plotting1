@@ -5,7 +5,7 @@ hhpower <- read.csv2('household_power_consumption.txt', na.strings='?')
 hhpower2days <- subset(hhpower, as.Date(hhpower$Date,'%d/%m/%Y') %in% c(as.Date('2007-02-02', '%Y-%m-%d'), as.Date('2007-02-01','%Y-%m-%d')))
 
 #intialize
-par(mfrow = c(1,1), bg = 'white')
+par(mfrow = c(1,1), bg = 'transparent')
 
 
 

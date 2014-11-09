@@ -9,7 +9,7 @@ hhpower2days$datetime = strptime(paste(hhpower2days$Date, hhpower2days$Time), '%
 
 
 #intialize
-par(mfcol = c(2,2), bg = 'white')
+par(mfcol = c(2,2), bg = 'transparent')
 
 
 # PLOT 2

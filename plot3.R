@@ -8,7 +8,7 @@ hhpower2days <- subset(hhpower, as.Date(hhpower$Date,'%d/%m/%Y') %in% c(as.Date(
 hhpower2days$datetime = strptime(paste(hhpower2days$Date, hhpower2days$Time), '%d/%m/%Y %H:%M:%S')
 
 #intialize
-par(mfrow = c(1,1), bg = 'white')
+par(mfrow = c(1,1), bg = 'transparent')
 
 
 

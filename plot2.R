@@ -13,9 +13,9 @@ par(mfrow = c(1,1), bg = 'transparent')
 
 # PLOT 2
 with(hhpower2days, 
-  plot(datetime, as.numeric(Global_active_power)/1000,
+  plot(datetime, as.numeric(paste(Global_active_power)),
        xlab = '', ylab = 'Global Active Power (kilowatts)', type='l')
 )
 
-dev.copy(png, file='./figure/plot2.png', width=480, height=480)
+dev.copy(png, file='plot2.png', width=480, height=480)
 dev.off()

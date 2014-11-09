@@ -25,7 +25,7 @@ legend('topright',
   col = c('black', 'red', 'blue') #line colors
 )
 
-dev.copy(png, file='./figure/plot3.png', width=480, height=480)
+dev.copy(png, file='plot3.png', width=480, height=480)
 dev.off()
 
 

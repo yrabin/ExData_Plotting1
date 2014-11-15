@@ -10,7 +10,7 @@ par(mfrow = c(1,1), bg = 'transparent')
 
 
 # PLOT 1
-hist(as.numeric(hhpower2days$Global_active_power), col='red', xlab='Global Active Power (kilowatts)', ylab='Frequency', main='Global Active Power')
+hist(as.numeric(paste(hhpower2days$Global_active_power)), col='red', xlab='Global Active Power (kilowatts)', ylab='Frequency', main='Global Active Power')
 
 dev.copy(png, file='plot1.png', width=480, height=480)
 dev.off()
